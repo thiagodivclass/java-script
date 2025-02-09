@@ -49,5 +49,27 @@
 // || Ou
 //-----------------------------------------------------------------
 
-var media =Number(window.prompt('Digite a sua nota.'))
-document.write(`${media}`>= 6?'Aprovado, parabéns!':'Volte a estudar e tente de novo na próxima!')
+// ---- Variáveis relacionais -------------------------
+
+// var media =Number(window.prompt('Digite a sua nota.'))
+// document.write(`${media}`>= 6?'Aprovado, parabéns!':'Volte a estudar e tente de novo na próxima!')
+//--------------------------------------------------------------
+//---------------DOM---------------------------------------------
+
+// var nom1 = window.document.getElementsByTagName('p')[0]
+//window.document.write('Está escrito: ' + nom1.innerText)
+// nom1.style.color = '#fff'
+
+// var one = window.document.getElementById('mao')
+// window.document.write('Está escrito: ' + one.innerText)
+// + doc.innerHTML pega a formatação
+
+// var doc = window.document.getElementsByTagName('h2')[0]
+// window.document.write(doc.innerText = 'Yaeee')
+// doc.style.background = 'red'
+// window.document.write('Boooraaa!! ' + doc.innerHTML)
+window.prompt('Já viu a teoria?')
+var doc1 = window.document.querySelector('p#mao')
+// window.document.write(doc1.innerText = 'Oi')
+// window.document.write('Vamos por a ' + doc1.innerText)
+window.alert('Agora é hora de por a ' + doc1.innerText)

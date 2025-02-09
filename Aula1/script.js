@@ -26,16 +26,28 @@
 //  document.write(`Seu nome é ${nome.toUpperCase()} `)
 //-------------------------------------------------------------
 
+
+//--------Trabalhando soma e conversão de moeda -----------------
+
 // var n1 = Number(window.prompt('Qual é o seu salário?'))
  
 // document.write(`O seu salário em real é ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
 
 
-var num1 = Number(window.prompt('Digite um número'))
-var num2 = Number(window.prompt('Digite outro número'))
-var soma = num1 + num2
+// var num1 = Number(window.prompt('Digite um número'))
+// var num2 = Number(window.prompt('Digite outro número'))
+// var soma = num1 + num2
 // window.alert(`O valor total de ${num1} mais ${num2} é de ${soma}`)
 // document.write(`A soma de ${num1} e ${num2} é ${soma}`)
-document.write(`A soma dos valores em real é ${soma.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+// document.write(`A soma dos valores em real é ${soma.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`) 
 
 
+//---------------------Operadores Lógicos-------------------------
+ 
+// ! Negação
+// && E 
+// || Ou
+//-----------------------------------------------------------------
+
+var media =Number(window.prompt('Digite a sua nota.'))
+document.write(`${media}`>= 6?'Aprovado, parabéns!':'Volte a estudar e tente de novo na próxima!')

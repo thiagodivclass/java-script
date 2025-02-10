@@ -68,8 +68,9 @@
 // window.document.write(doc.innerText = 'Yaeee')
 // doc.style.background = 'red'
 // window.document.write('Boooraaa!! ' + doc.innerHTML)
-window.prompt('Já viu a teoria?')
-var doc1 = window.document.querySelector('p#mao')
+// window.prompt('Já viu a teoria?')
+// var doc1 = window.document.querySelector('p#mao')
 // window.document.write(doc1.innerText = 'Oi')
 // window.document.write('Vamos por a ' + doc1.innerText)
-window.alert('Agora é hora de por a ' + doc1.innerText)
+// window.alert('Agora é hora de por a ' + doc1.innerText)
+

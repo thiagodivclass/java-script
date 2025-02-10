@@ -9,3 +9,31 @@ body {
     background-color:black;
     color: aqua;
 }
+
+header h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main p {
+    text-align: center;
+}
+
+
+div#area {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: darkgrey;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    
+
+}

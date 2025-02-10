@@ -19,6 +19,7 @@ main {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    
 }
 
 main p {
@@ -30,10 +31,11 @@ div#area {
     display: flex;
     height: 200px;
     width: 200px;
+    padding: 5px;
     background-color: darkgrey;
     color: black;
     justify-content: center;
     align-items: center;
-    
+    text-align: center;
 
 }

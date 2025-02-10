@@ -74,3 +74,25 @@
 // window.document.write('Vamos por a ' + doc1.innerText)
 // window.alert('Agora é hora de por a ' + doc1.innerText)
 
+//----------------- Eventos DOM ------------------------------
+
+
+var one = window.document.getElementById('area')
+
+function clicar() {
+    
+    one.innerText = 'Você clicou, seu abestado!!'
+
+}
+
+function entrar() {
+    
+    one.innerText = 'Vocês passou o mouse aqui, seu jegue, agora clica!'
+}
+function sair() {
+    one.innerText = 'Saiu, agora vá dormir!'
+    one.style.background='violet'
+    one.style.color='#000'
+    one.style.fontWeight='bold'
+    
+}

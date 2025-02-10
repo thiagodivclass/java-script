@@ -39,19 +39,27 @@ div#area {
     color: black;
 }
 
+div#area form{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 350px;
+}
+
+
 div#area input {
     width: 50%;
     text-align: center;
    
 }
 
-#button {
+#button  {
     margin-top: 10px;
     cursor: pointer;
 
 }
 
-#button:hover {
+#button:hover, #limp:hover {
     background-color: aqua;
     color: black;
     font-weight: bold;
@@ -68,4 +76,5 @@ div#res {
     border-radius: 10px;
     text-align: center;
     font-weight: bold;
+    padding: 2px;
 }

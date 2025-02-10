@@ -78,6 +78,9 @@
 
 
 var one = window.document.getElementById('area')
+one.addEventListener('click', clicar)
+one.addEventListener('mouseenter', entrar)
+one.addEventListener('mouseout', sair)
 
 function clicar() {
     

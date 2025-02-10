@@ -39,3 +39,54 @@ div#area {
     text-align: center;
 
 }
+
+.fa-list {
+    font-size: 1.5em;
+    color: cadetblue;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.fa-list:hover{
+    color: #fff;
+}
+
+#menu {
+    display: none;
+    flex-flow: column nowrap;
+    justify-content:flex-start;
+    align-items:flex-start;
+    display: none;
+    height: 170px;
+    width: 60px;
+  
+   
+    
+    
+    
+    
+}
+
+#menu ul {
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+#menu ul li{
+    list-style: none;
+    margin-bottom: 8px;
+    
+ 
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+#menu ul li a:hover{
+    text-decoration: underline;
+}

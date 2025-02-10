@@ -102,3 +102,19 @@ function sair() {
     one.style.fontWeight='bold'
     one.style.background='darkgray'
 }
+//----------------------------------------------------------------
+
+var lista = window.document.getElementById('list')
+lista.addEventListener('mouseenter', options)
+
+
+function options(){
+    // (menu.style.display == 'none') caso de if, else
+        menu.style.display = 'flex'
+    }
+
+var show = window.document.querySelector('main')
+show.addEventListener('click', some)
+function some() {
+    menu.style.display='none'
+} 

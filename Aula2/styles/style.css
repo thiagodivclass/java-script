@@ -59,6 +59,11 @@ div#area input {
 
 }
 
+#limp {
+    cursor: pointer;
+    margin-top: 5px;
+}
+
 #button:hover, #limp:hover {
     background-color: aqua;
     color: black;
@@ -75,6 +80,7 @@ div#res {
     height: 50px;
     border-radius: 10px;
     text-align: center;
+    font-size: 1em;
     font-weight: bold;
     padding: 2px;
 }

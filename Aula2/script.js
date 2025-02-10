@@ -10,7 +10,7 @@ function somar() {
     var dig2 = Number(op2.value)
     var s = dig1 + dig2
 
-    res.innerHTML= `A soma entre ${dig1} e ${dig2} é igual a ${s.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`
+    res.innerHTML=`${s.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})}`
 
 }
 

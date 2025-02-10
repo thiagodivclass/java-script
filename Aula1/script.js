@@ -82,17 +82,20 @@ var one = window.document.getElementById('area')
 function clicar() {
     
     one.innerText = 'Você clicou, seu abestado!!'
+    one.style.background='#000'
+    one.style.color='#fff'
 
 }
 
 function entrar() {
     
     one.innerText = 'Vocês passou o mouse aqui, seu jegue, agora clica!'
+    one.style.background='violet'
 }
 function sair() {
     one.innerText = 'Saiu, agora vá dormir!'
-    one.style.background='violet'
+    
     one.style.color='#000'
     one.style.fontWeight='bold'
-    
+    one.style.background='darkgray'
 }

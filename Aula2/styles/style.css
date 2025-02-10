@@ -47,8 +47,16 @@ div#area input {
 
 #button {
     margin-top: 10px;
+    cursor: pointer;
 
 }
+
+#button:hover {
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+}
+
 
 div#res {
     display: flex;

@@ -7,7 +7,13 @@
 }
 
 html, body {
-    height: 100vh;
+    height: 100%;
+    
+    
+}
+ 
+body {
+    background-color: #1a3394;
 }
 
 header {
@@ -25,8 +31,9 @@ header h1 {
 }
 
 main {
-    background-color: #1a3394;
-    height: 100%;
+    
+    display: flex;
+    flex-flow: column wrap;
     padding: 15px;
 }
 
@@ -87,7 +94,7 @@ main #info {
 
 main div#nacional {
     height: 15vh;
-    max-width: 40vw;
+    width: 40vw;
     background: linear-gradient(to left,#f5e001, #118d2f);
     font-weight: bold;
     padding: 20px;
@@ -96,5 +103,22 @@ main div#nacional {
     color:#1a3394;
     box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.342);
     border-radius: 15px;
-    margin: auto;
+    margin:25px auto;
+}
+
+
+.fa-eye {
+    font-size: 2em;
+    color: #118d2f;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.fa-eye:hover {
+    color: #f5e001;
+}
+
+.image {
+    margin:0 auto;
+    display: none;
 }

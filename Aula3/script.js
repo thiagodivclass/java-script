@@ -7,7 +7,13 @@
 // else {
 //     console.log(`Você passou a ${vel}km/h, muito bom, dirija sempre com segurança!`)
 // }
+
+//__________________________________________________________________________________________
+
  
+var wat = window.prompt('Olá, qual é o seu nome?')
+window.alert(`Olá, ${wat}, bem-vindo(a)!`)
+
 
 var confere = window.document.querySelector('#valid')
 confere.addEventListener('click', verific)
@@ -41,6 +47,18 @@ function reset() {
     nacional.innerHTML = ''
 }
 
+var olho = window.document.querySelector('#eye')
+olho.addEventListener('click', most)
 
+function most(){
+    if (image.style.display=='flex'){ 
+        
+        image.style.display ='none'
+    }
+
+    else {
+        image.style.display='flex'
+    }
+}
 
 

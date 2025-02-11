@@ -86,3 +86,8 @@ volte.addEventListener('click', back)
 function back() {
     window.location.reload()
 }
+
+
+//_______________________________________________
+
+

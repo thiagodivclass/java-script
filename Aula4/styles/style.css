@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+html, body {
+    height: 100%;
+}
+
+
+body{
+background-color: darkgoldenrod;
+}
+
+
+header{
+    height: 10vh;
+    padding-top: 10px;
+    background-color: maroon;
+    text-align: center;
+    color: antiquewhite;
+}
+main h2 {
+    text-align: center;
+    color: maroon;
+    
+}
+
+main #opcoes {
+    margin:15px auto 0 auto;
+    text-align: center;
+}
+
+div#cardap {
+
+    width: 45vw;
+    height: 30vh;
+    background-color: rgba(148, 73, 19, 0.76);
+    margin:15px auto 0 auto;
+    color: antiquewhite;
+}

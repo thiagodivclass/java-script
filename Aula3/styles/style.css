@@ -1,0 +1,100 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+}
+
+header {
+    background-color: #118d2f;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header h1 {
+    text-align: center;
+    color: #f5e001;
+}
+
+main {
+    background-color: #1a3394;
+    height: 100%;
+    padding: 15px;
+}
+
+main h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+main #info {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#info #form {
+    display: flex;
+    width: 40vw;
+    flex-flow: column wrap;
+    margin-top: 20px;
+    margin: auto;
+}
+
+#info #form input, #valid {
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+}
+
+#info #form #pais {
+    background-color: #f5e001;
+    text-align: center;
+}
+
+   #valid {
+    width: 40vw;
+    background-color: #118d2f;
+    cursor: pointer;
+    
+}
+    #valid:hover{
+    background-color: #fff;
+    color: #1a3394;
+    font-weight: bold;
+}
+
+#info #form #clean {
+    cursor: pointer;
+}
+#info #form #clean:hover {
+    background-color: #f5e001;
+    color: #118d2f;
+    font-weight: bold;
+}
+
+main div#nacional {
+    height: 15vh;
+    max-width: 40vw;
+    background: linear-gradient(to left,#f5e001, #118d2f);
+    font-weight: bold;
+    padding: 20px;
+    font-size: 1em;
+    text-align: center;
+    color:#1a3394;
+    box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.342);
+    border-radius: 15px;
+    margin: auto;
+}

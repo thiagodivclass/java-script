@@ -71,13 +71,13 @@ main #info {
     text-align: center;
 }
 
-   #valid {
+   #valid, #restart {
     width: 40vw;
     background-color: #118d2f;
     cursor: pointer;
     
 }
-    #valid:hover{
+    #valid:hover, #restart:hover{
     background-color: #fff;
     color: #1a3394;
     font-weight: bold;
@@ -86,7 +86,7 @@ main #info {
 #info #form #clean {
     cursor: pointer;
 }
-#info #form #clean:hover {
+#info #form #clean:hover, #moment:hover {
     background-color: #f5e001;
     color: #118d2f;
     font-weight: bold;
@@ -121,4 +121,29 @@ main div#nacional {
 .image {
     margin:0 auto;
     display: none;
+}
+
+ #hora {
+    display: flex;
+    width: 40vw;
+    height: 50px;
+    background-color: aquamarine;
+    border-radius: 40px;
+    margin: 10px auto;
+    font-weight: bold;
+    align-items: center;
+    font-size: 1em;
+    justify-content: center;
+    text-align: center;
+    color:#1a3394;
+
+}
+
+#moment, #restart {
+    margin: 10px auto;
+    height: 30px;
+    width: 40vw;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
 }

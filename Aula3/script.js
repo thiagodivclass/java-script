@@ -11,8 +11,8 @@
 //__________________________________________________________________________________________
 
  
-var wat = window.prompt('Olá, qual é o seu nome?')
-window.alert(`Olá, ${wat}, bem-vindo(a)!`)
+// var wat = window.prompt('Olá, qual é o seu nome?')
+// window.alert(`Olá, ${wat}, bem-vindo(a)!`)
 
 
 var confere = window.document.querySelector('#valid')
@@ -28,12 +28,15 @@ function verific(){
    var result = window.document.querySelector('#nacional')
    
 
-    if (txt == 'Brasil') {
+    if (txt == 'Brasil' || txt == 'brasil') {
         result.innerHTML = `Seu país é ${txt}, você é brasileiro(a)!`
     }
 
     else {
-        result.innerHTML = `Seu país é ${txt}, Você é estrangeiro(a)!`
+
+         result.innerHTML = `Seu país é ${txt}, Você é estrangeiro(a)!`
+       
+        
     }
 
     
@@ -62,3 +65,24 @@ function most(){
 }
 
 
+// else if**
+
+var atual = new Date()
+var horario = atual.getHours() +':'+ atual.getMinutes() 
+var now = window.document.querySelector('#moment')
+var surge = window.document.querySelector('#hora')
+now.addEventListener('click', play)
+
+function play() {
+    
+        surge.innerHTML=`Agora são ${horario}`
+   
+   
+}
+
+var volte = window.document.querySelector('#restart')
+volte.addEventListener('click', back)
+
+function back() {
+    window.location.reload()
+}

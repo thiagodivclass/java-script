@@ -44,7 +44,7 @@ main #info {
     align-items: center;
 }
 
-#info #form {
+#info #form form{
     display: flex;
     width: 40vw;
     flex-flow: column wrap;

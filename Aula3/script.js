@@ -9,19 +9,38 @@
 // }
  
 
+var confere = window.document.querySelector('#valid')
+confere.addEventListener('click', verific)
+ 
+ 
 
-function verific() {
-    var txt1 = window.document.getElementById('pais').value
-    var state = window.document.getElementById('nacional')
 
-    if (txt1 == 'Brasil') {
-        state.innerText = `Você é brasileiro!`
-    } 
-    else {  state.innerText = `Você é estrangeiro!`}
+function verific(){
 
   
+   var txt = window.document.querySelector('#pais').value
+   var result = window.document.querySelector('#nacional')
+   
 
+    if (txt == 'Brasil') {
+        result.innerHTML = `Seu país é ${txt}, você é brasileiro!`
+    }
 
+    else {
+        result.innerHTML = `Seu país é ${txt}, Você é estrangeiro!`
+    }
 
-
+    
 }
+  
+var limp = window.document.querySelector('#clean')
+limp.addEventListener('click', reset)
+
+
+function reset() {
+    nacional.innerHTML = ''
+}
+
+
+
+

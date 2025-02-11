@@ -23,11 +23,11 @@ function verific(){
    
 
     if (txt == 'Brasil') {
-        result.innerHTML = `Seu país é ${txt}, você é brasileiro!`
+        result.innerHTML = `Seu país é ${txt}, você é brasileiro(a)!`
     }
 
     else {
-        result.innerHTML = `Seu país é ${txt}, Você é estrangeiro!`
+        result.innerHTML = `Seu país é ${txt}, Você é estrangeiro(a)!`
     }
 
     

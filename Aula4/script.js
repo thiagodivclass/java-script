@@ -46,7 +46,8 @@ switch (menu) {
     case 6: card.innerHTML= 'Feijoada, bisteca, couve e couve.'
     prato.src='imagens/feijoada.png'
     break
-
+    default: 
+    alert('Selecione um dia e tente novamente.')
     
 }
 

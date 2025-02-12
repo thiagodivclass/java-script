@@ -10,15 +10,24 @@
 
 <body>
     <header>
-        <h1>Testando Switch</h1>
+        <h1>Restaurante do Madeira</h1>
     </header>
     <main>
         <h2>Confira o nosso cardápio diário:</h2>
         <div id="opcoes">
             
           
-                <input type="text" name="dias" id="dias">
-                <input  type="submit" id="verificar" value="confirmar">
+                <select name="dias" id="dias">
+                    <option disabled selected>Selecione o dia</option>
+                    <option value="0">Domingo</option>
+                    <option value="1">Segunda-feira</option>
+                    <option value="2">Terça-feira</option>
+                    <option value="3">Quarta-feira</option>
+                    <option value="4">Quinta-feira</option>
+                    <option value="5">Sexta-feira</option>
+                    <option value="6">Sábado</option>
+                </select>
+                <input  type="submit" id="verificar" value="Ver prato">
            
                 
            
@@ -26,6 +35,9 @@
         </div>
 
         <div id="cardap"></div>
+        <div id="imagem">
+            <img  id="prato" src="imagens/menu.png" alt="Foto do prato" title="Foto do prato">
+        </div>
     </main>
 
 

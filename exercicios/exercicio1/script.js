@@ -5,7 +5,7 @@ function carregar() {
     var moment = new Date()
     var hora = moment.getHours() 
 
-    messenger.innerHTML=`Agora são ${hora} horas`
+    // messenger.innerHTML=`Agora são ${hora} horas`
 
     if (hora >= 0 && hora < 12 ) {
         messenger.innerHTML=`Agora são ${hora} horas, bom dia!`

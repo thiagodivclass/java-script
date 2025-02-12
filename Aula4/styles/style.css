@@ -28,16 +28,63 @@ main h2 {
     
 }
 
+main #dias {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgba(148, 73, 19, 0.76);
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+
+main #verificar{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgba(148, 73, 19, 0.76);
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+main #verificar:hover{
+
+    background: rgb(231, 181, 55);
+    color: brown;
+    transform: translateY(-2.5px);
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.349);
+}
+
+
 main #opcoes {
     margin:15px auto 0 auto;
     text-align: center;
 }
 
 div#cardap {
-
+    text-align: center;
+    font-size: 1.5em;
     width: 45vw;
-    height: 30vh;
+    height: 18vh;
     background-color: rgba(148, 73, 19, 0.76);
     margin:15px auto 0 auto;
     color: antiquewhite;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.349);
+}
+
+
+div#imagem {
+    
+    width: 100vw;
+    margin-top: 10px;
+    text-align: center;
 }

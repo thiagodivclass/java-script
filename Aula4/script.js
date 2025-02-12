@@ -47,8 +47,7 @@ switch (menu) {
     prato.src='imagens/feijoada.png'
     break
 
-    default: card.innerHTML= 'Não servimos no dia selecionado.'
-    prato.src='imagens/triste.png'
+    
 }
 
  }

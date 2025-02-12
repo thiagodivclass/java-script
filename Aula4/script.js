@@ -3,6 +3,8 @@
 var fire = window.document.querySelector('#verificar')
 fire.addEventListener('click', rango)
 var prato = window.document.querySelector('#prato')
+var limpar = window.document.querySelector('#lixo')
+limpar.addEventListener('click', clean)
 // var menu = Number(day)
 
  function rango() {
@@ -49,4 +51,8 @@ switch (menu) {
     prato.src='imagens/triste.png'
 }
 
+ }
+
+ function clean(){
+    window.location.reload()
  }

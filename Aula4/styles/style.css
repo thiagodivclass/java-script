@@ -38,6 +38,7 @@ main #dias {
     font-weight: bold;
     border: none;
     cursor: pointer;
+    
 }
 
 
@@ -87,4 +88,24 @@ div#imagem {
     width: 100vw;
     margin-top: 10px;
     text-align: center;
+}
+
+.facontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.fa-trash {
+    font-size: 2em;
+    color: rgb(105, 51, 12);
+    cursor: pointer;
+}
+
+.fa-trash:hover{
+    color: brown;
+    transform: translateY(-2.5px);
+    transition: 0.5s;
+    
 }

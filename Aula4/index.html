@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
     <link rel="shortcut icon" href="imagens/cardicon.png" type="image/x-icon">
+    
     <link rel="stylesheet" href="styles/style.css">
     <title>Cardápio Usando Switch</title>
 </head>
@@ -18,7 +22,8 @@
         <div id="opcoes">
             
           
-                <select name="dias" id="dias">
+                <select name="dias" id="dias" >
+            
                     <option disabled selected>Selecione o dia</option>
                     <option value="0">Domingo</option>
                     <option value="1">Segunda-feira</option>
@@ -27,6 +32,7 @@
                     <option value="4">Quinta-feira</option>
                     <option value="5">Sexta-feira</option>
                     <option value="6">Sábado</option>
+                    
                 </select>
                 <input  type="submit" id="verificar" value="Ver prato">
            
@@ -38,6 +44,9 @@
         <div id="cardap"></div>
         <div id="imagem">
             <img  id="prato" src="imagens/menu.png" alt="Foto do prato" title="Foto do prato">
+        </div>
+        <div class="facontainer">
+            <span class="fa fa-trash" id="lixo"></span>
         </div>
     </main>
 

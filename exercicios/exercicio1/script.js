@@ -3,7 +3,7 @@ function carregar() {
     var messenger = window.document.querySelector('#msg')
     var picture = document.querySelector('#imagem')
     var moment = new Date()
-    var hora = 19 //moment.getHours() 
+    var hora = moment.getHours() 
 
     messenger.innerHTML=`Agora são ${hora} horas`
 

@@ -6,6 +6,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html, body{
+    height: 100%;
+}
+
 header {
     text-align: center;
     height: 10vh;
@@ -34,5 +38,9 @@ section #msg {
 }
 
 footer {
-    text-align: center;
+ position: fixed;
+ bottom: 0;    
+ width: 100vw;
+ display: flex;
+justify-content: center; 
 }

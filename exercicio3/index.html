@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Teko:wght@300..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
     <title>Verificador</title>
 </head>
 <body>
     <header>
-        Verificador
+        Verificador de gênero e faixa etária
     </header>
 
     <main>
@@ -25,11 +28,13 @@
                 <label for="sexfem">Feminino</label><br>
             </p>
             
-            <p><input type="submit" value="Verificar" id="coferir"></p>
+            <p><input type="submit" value="Verificar" id="coferir">
+            <input type="reset" value="Limpar" id="clean"></p>
         </div>
-        <div id="foto"></div>
+        
         <div id="texto">Preencha os campos acima e clique em verificar.</div>
-        <div></div>
+        <div id="img"><img src="imagens/padrao.png" alt="foto de uma pessoa" id="foto"></div>
+        
     </main>
 
     <footer>

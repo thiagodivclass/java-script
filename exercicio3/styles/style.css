@@ -6,6 +6,102 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+html, body {
+    height: 10vh;
+  
+}
+
+
+body{
+    background-color: rgba(253, 148, 110, 0.795);
+}
+
+
 header {
-    background-color: lightsteelblue;
+    background-color:darkcyan;
+    color: #fff;
+    height: 8vh;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.9em;
+    padding-top:5px;
+    
+}
+
+main {
+    height: 80vh;
+    background-color: rgba(253, 148, 110, 0.795);
+    padding: 20px;
+}
+
+main #form{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items:flex-start;
+    padding-left: 20px ;
+    height: 20vh;
+    background-color: rgba(252, 36, 36, 0.267);
+    border-radius: 15px;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.384);
+
+
+}
+
+#form p {
+    margin-bottom: 15px;
+    
+}
+#form label {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.3em;
+}
+
+main #texto{
+    margin-top: 25px;
+    text-align: center;
+    
+}
+
+main #date {
+    background-color:rgba(250, 164, 133, 0.795) ;
+    border: none;
+    border-radius: 9px;
+    text-align: center;
+    font-weight: 700;
+    height: 25px;
+}
+
+main #coferir, #clean {
+    background-color:rgba(255, 193, 170, 0.795);
+    height: 25px;
+    width: 90px;
+    border-radius: 9px;
+    text-align: center;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    
+}
+
+main #coferir:hover, #clean:hover{
+    background-color:rgba(255, 223, 212, 0.945);
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.527);
+    transform: translateY(-5px);
+    transition: .5s;
+
+}
+
+main #img {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+footer {
+    font-family: 'Poiret One', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to left,rgba(255, 202, 183, 0.795), rgb(4, 209, 209) );
+    text-align: center;
 }

@@ -12,10 +12,11 @@ var clean = document.querySelector('#voltar')
 stick.addEventListener('click', contar)
 clean.addEventListener('click', limpar)
 //---------------------------------------------
-
+//Limpar----------------------
 function limpar() {
     txt4.innerHTML=''
 }
+//------------------------------------
 
 function contar() {
     var inicio = txt1

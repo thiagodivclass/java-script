@@ -47,6 +47,38 @@ main #form{
 
 }
 
+form > div{
+    margin-bottom: 5px;
+}
+
+form #on{
+    margin-right: 5px;
+    
+}
+
+
+form #inicio, form #fim, form #adic {
+    background-color: rgba(253, 148, 110, 0.795);
+    border: none;
+    border-radius: 3px;
+    height: 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+form #adic {
+    width: 155px;
+}
+
+form #start, form #voltar {
+    background-color: rgba(253, 148, 110, 0.795);
+    height: 20px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 
 main #texto{

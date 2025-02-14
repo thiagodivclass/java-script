@@ -13,7 +13,7 @@
         justify-content: center;
         align-items:flex-start;
         padding: 20px ;
-        height: 20vh;
+        height: 23vh;
         width: 200px;
         margin: auto;
         background-color: rgba(252, 36, 36, 0.267);
@@ -21,6 +21,10 @@
         box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.384);
     
     
+    }
+
+    form #adic {
+        width: 200px;
     }
  
     

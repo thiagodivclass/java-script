@@ -1,52 +1,68 @@
-var play = document.querySelector('#start')
-play.addEventListener('click', contagem)
+//---Inputs ---------------------------------------------
+var txt1 = document.querySelector('#inicio')
+var txt2 = document.querySelector('#fim')
+var txt3 = document.querySelector('#adic')
+var txt4 = document.querySelector('#texto')
 
+// Botões
+var stick = document.querySelector('#start')
 var clean = document.querySelector('#voltar')
-clean.addEventListener('click', limp)
 
-function limp(){
-    document.location.reload()
+// Funções:
+stick.addEventListener('click', contar)
+clean.addEventListener('click', limpar)
+//---------------------------------------------
+
+function limpar() {
+    txt4.innerHTML=''
 }
 
-function contagem(){
-    var camp1 = document.querySelector('#inicio')
-    var camp2 = document.querySelector('#fim')
-    var camp3 = document.querySelector('#adic')
-    var result = document.querySelector('#texto')
+function contar() {
+    var inicio = txt1
+    var fim = txt2
+    var passo = txt3
+    var result = txt4
 
-    
-
-    if (camp1.value.length == 0 || camp2.value.length ==0 || camp3.value.length ==0){
-        alert('Erro: Um ou mais campos vazios!')
+    if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+        alert('Erro: Um ou mais campos vazios')
     }
 
     else {
-       result.innerHTML='Contando: <br> '
-       var ini = Number(camp1.value)
-       var fim = Number(camp2.value)
-       var pass = Number(camp3.value)
-       if(pass <=0){
-        alert('Passo 0 inválido, considerando passo 1')
-        pass = 1
-    }
+        result.innerHTML = 'Contando:<br>'
+        var prim = Number(inicio.value)
+        var segund = Number(fim.value)
+        var terceiro = Number(passo.value)
 
-       if (ini < fim){
-            for(var a = ini; a <= fim; a+= pass){
-            result.innerHTML += `${a}, `
-            
-            }
-       }
-        else {
-            //Contagem regressiva
-            for(var a = ini; a >= fim; a-= pass){
-                result.innerHTML += `${a}, `
-                
-                }
+        if (terceiro <= 0) {
+            alert('Passo 0 inválido, considerendo passo 1')
+            terceiro = 1
         }
-        result.innerHTML += `\u{1F3C6}`
-    }
+   
+
+        if (prim < segund) {
+            for (var a = prim; a <= segund; a += terceiro) {
+                result.innerHTML += ` ${a}, `
+            }
+
+        }
+        else {
+            for (var a = prim; a >= segund; a -= terceiro) {
+                result.innerHTML += ` ${a}, `
+            }
 
 
+
+        }
+
+       result.innerHTML += `\u{1F3C6}`
     
- 
+    }   
+
+
+
+
+
+
+
+
 }

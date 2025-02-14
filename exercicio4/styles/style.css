@@ -7,7 +7,7 @@
 }
 
 html, body {
-    height: 10vh;
+    height: 100vh;
   
 }
 
@@ -29,7 +29,7 @@ header {
 }
 
 main {
-    height: 80vh;
+    height: 85vh;
     background-color: rgba(253, 148, 110, 0.795);
     padding: 20px;
 }
@@ -53,8 +53,17 @@ main #form{
 
 
 main #texto{
-    margin-top: 25px;
+    height: 40vh;
+    width: 320px;
+    margin: 25px auto;
     text-align: center;
+    background-color: #ffffff71;
+    border-radius: 7px;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.384);
+    padding: 5px;
+    overflow: auto;
+    scrollbar-width: none;
+   
     
 }
 
@@ -69,6 +78,10 @@ main #texto{
 
 
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     font-family: 'Poiret One', sans-serif;
     font-weight: bold;
     background: linear-gradient(to left,rgba(255, 202, 183, 0.795), rgb(4, 209, 209) );

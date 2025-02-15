@@ -13,7 +13,7 @@ function clique(){
 
     
     if (campo.value.length <= 0) {
-        alert('Erro: Campo vazio, digite um número e confirme!')
+        alert('Erro: Campo vazio, digite um número e gere a tabuada!')
 
     }
     else {

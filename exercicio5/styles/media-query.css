@@ -4,11 +4,37 @@
     height: 20vh;
 }
 
+main #tabuada{
+    margin-top: 25px;
+    text-align: left;
+    padding: 15px;
+    overflow: auto;
+    scrollbar-width: none;
+    width: 150px;
+    background-color: rgba(252, 36, 36, 0.267);
+    border-radius: 15px;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.384);
+    
+}
+
 }
 
 @media screen and (min-width: 768px) {
     main #form{
         height: 18vh;
+    }
+
+    main #tabuada{
+        margin-top: 25px;
+        text-align: left;
+        padding: 15px;
+        overflow: auto;
+        scrollbar-width: none;
+        width: 150px;
+        background-color: rgba(252, 36, 36, 0.267);
+        border-radius: 15px;
+        box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.384);
+        
     }
 
     

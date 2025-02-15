@@ -38,10 +38,10 @@ main #form{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items:flex-start;
-    padding: 20px ;
+    align-items:center;
+    padding: 15px ;
     height: 20vh;
-    width: 280px;
+    width: 260px;
     margin: auto;
     background-color: rgba(252, 36, 36, 0.267);
     border-radius: 15px;
@@ -50,14 +50,66 @@ main #form{
 
 }
 
+main form {
+    display: flex;
+    flex-flow: column nowrap;
 
+}
 
-main #texto{
-    margin-top: 25px;
-    text-align: center;
+main #num{
+    background-color: rgba(255, 210, 194, 0.795);
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    width: 163px;
+    margin-top: 5px;
     
 }
 
+
+
+main #confirma{
+    height: 25px;
+    padding: 2px;
+    background-color: rgba(255, 186, 161, 0.795);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+
+}
+
+main #limp{
+
+    height: 25px;
+    padding: 2px;
+    background-color: rgba(255, 186, 161, 0.795);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main #tabuada-container{
+    display: flex;
+    justify-content: center;
+}
+
+main #tabuada{
+    margin-top: 25px;
+    text-align: left;
+    padding: 15px;
+    overflow: auto;
+    scrollbar-width: none;
+    width: 150px;
+    background-color: rgba(252, 36, 36, 0.267);
+    border-radius: 15px;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.384);
+    
+}
 
 
 

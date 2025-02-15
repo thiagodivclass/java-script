@@ -1,27 +1,32 @@
 @charset "UTF-8";
-@media screen and (min-width:600px){
+@media screen and (max-width:600px){
     main #form{
     height: 20vh;
-}
-
-main #tabuada{
-    margin-top: 25px;
-    text-align: left;
+    }
+    
+    main #texto{
+    margin: 15px auto ;
     padding: 15px;
     overflow: auto;
     scrollbar-width: none;
-    width: 150px;
+    height: 150px;
+    width: 120px;
     background-color: rgba(252, 36, 36, 0.267);
     border-radius: 15px;
     box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.384);
-    
-}
+
+   }
+
+   main #tabuada-container{
+    display: none;
+   }
+
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 601px) {
     main #form{
-        height: 18vh;
+        height: 25vh;
     }
 
     main #tabuada{
@@ -35,9 +40,16 @@ main #tabuada{
         border-radius: 15px;
         box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.384);
         
+        
     }
 
-    
+    main #texto{
+        display: none;
+      
+    }
+
+
+
 }
 
 

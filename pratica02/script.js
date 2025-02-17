@@ -79,29 +79,29 @@ function contagem() {
         alert('Erro: Um ou mais campos da contagem vazios.')
     }
     else {
-        let cp1 = Number(primeiro.value)
-        let cp2 = Number(segundo.value)
-        let cp3 = Number(terceiro.value)
-
+        // let cp1 = Number(primeiro.value)
+        // let cp2 = Number(segundo.value)
+        // let cp3 = Number(terceiro.value)
+        let cpnum = [Number(primeiro.value), Number(segundo.value), Number(terceiro.value)]
         vew.innerHTML='Contagem: <br>'
-        if (cp3 <= 0) {
+        if (cpnum[2] <= 0) {
             alert('Erro: Intervalo inválido, considerando intervalo 1.')
-            cp3 = 1
+            cpnum[2] = 1
             
         }
         
          
         
-        if (cp1 < cp2) {
-            for (let a = cp1; a <= cp2; a += cp3) {
+        if (cpnum[0] < cpnum[1]) {
+            for (let a = cpnum[0]; a <= cpnum[1]; a += cpnum[2]) {
                 vew.innerHTML += `${a}, `
 
             }
         
         }
 
-        if (cp1 > cp2) {
-            for (let a = cp1; a >= cp2; a -= cp3) {
+        if (cpnum[0] > cpnum[1]) {
+            for (let a = cpnum[0]; a >= cpnum[1]; a -= cpnum[2]) {
                 vew.innerHTML += `${a}, `
 
            }

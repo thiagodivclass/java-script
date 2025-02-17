@@ -60,9 +60,7 @@ main .container-forms{
     display:flex;
     flex-flow: row nowrap;
     width: 390px;
-    position: fixed;
-    left: 35%;
-    top: 5%;
+     margin: auto;
     
     
 }
@@ -149,9 +147,7 @@ main .texto-container{
     display: flex;
     flex-flow: row nowrap;
     width: 380px;
-    position: fixed;
-    top: 40%;
-    left: 35.3%;
+    margin: auto;
     /* border: 1px solid black; */
 
 

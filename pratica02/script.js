@@ -1,3 +1,30 @@
+
+let opções = document.querySelector('#services')
+opções.addEventListener('click', services)
+function services(){
+
+    if(list.style.display=='block') {
+        list.style.display='none'
+
+        
+    }
+    
+    else{
+      
+     list.style.display='block'    
+        
+    }
+
+
+
+
+}
+
+
+
+
+
+
 let way = document.querySelector('#botao')
 let file = document.querySelector('#num')
 let print = document.querySelector('#texto')

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Teko:wght@300..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <title>Praticando</title>
+</head>
+<body>
+    <header>
+        <h1>Praticando.js</h1>
+        <nav>
+            <p><a href="">Home</a> | <span id="services">Serviços</span> | <a href="">Contatos</a></p>
+        </nav>
+    </header>
+
+    <main>
+        <ul  id="list">
+            <li><a href="">Mídias</a></li>
+            <li><a href="">Som</a></li>
+            <li><a href="">Iluminação</a></li>
+        </ul>
+
+        <section class="container-forms">
+            <div id="form">
+                <p>Tabuada de:</p>
+                <form>
+                    <input type="number" name="num" id="num" min="0">
+                    <input type="button" value="Gerar tabuada" name="botao" id="botao">
+                    <input type="reset" value="Limpar" id="Limpar">
+                </form>
+            </div>
+            <div id="contagem">
+                <p>Contagem:</p>
+                <form>
+                    <p>De:</p><input type="number" name="campo1" id="campo1" min="0">
+                    <p>Até:</p><input type="number" name="campo2" id="campo2" min="0">
+                    <p>Intervalo:</p><input type="number" name="campo3" id="campo3" min="0">
+                    <input type="button" value="contar" name="contar" id="contar">
+                    <input type="reset" value="Limpar" id="Limpeza">
+                </form>
+            </div>
+        </section>
+        
+        <div class="texto-container"> 
+                      
+            <div id="texto">Tabuada: <br></div>
+            <div id="texto2">Contagem: <br> </div>
+        </div>
+
+    </main>
+
+    <footer>
+        &copy; Thiago Madeira
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

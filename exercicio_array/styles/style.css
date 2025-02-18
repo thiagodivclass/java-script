@@ -67,9 +67,11 @@ main #valores{
 
 main #texto{
     height: 200px;
+    padding: 5px;
     text-align: center;
     overflow: auto;
     scrollbar-width: none;
+
     
 }
 

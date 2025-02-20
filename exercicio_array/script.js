@@ -1,23 +1,27 @@
-let numero = document.querySelector('input#numero')
-let lista = document.querySelector('select#valores')
-let botaoAdd  = document.querySelector('input#add')
-let botaoFinal = document.querySelector('input#fim')
-let botaoReinic = document.querySelector('input#atualizar')
-let resposta = document.querySelector('div#texto')
+let numeral = document.querySelector('input#numero')
+let listaNum = document.querySelector('select#valores')
+let info = document.querySelector('div#texto')
+let botaoAdic = document.querySelector('input#add')
+let botaoFinish = document.querySelector('input#fim')
+let botaoReload = document.querySelector('input#atualizar') 
 
-botaoAdd.addEventListener('click', adicionar)
-botaoFinal.addEventListener('click', finalizar)
+botaoAdic.addEventListener('click', adicionar)
+botaoFinish.addEventListener('click', finalizar)
+botaoReload.addEventListener('click', atualizar)
 
-botaoReinic.addEventListener('click', atualizar)
-
-
-
-
-
-let vetorLista = []
+let vetorValores=[]
 
 function isNum(n){
-    if(Number(n) >=1 && Number(n) <=100){
+    if(Number(n) >= 1 && Number(n) <= 100){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+function inList(n, l){
+    if(l.indexOf(Number(n)) != -1){
         return true
     }
     else {
@@ -25,68 +29,57 @@ function isNum(n){
     }
 }
 
-function inLista(n, l){
-    if(l.indexOf(Number(n)) !=-1){
-        return true
-    }
-    else{
-        return false
-    }
-}
-
 function adicionar(){
-
-    
-    if(isNum(numero.value) && !inLista(numero.value, vetorLista)){
-        vetorLista.push(Number(numero.value))
-        let valorslct = document.createElement('option')
-        valorslct.text=`Valor ${numero.value} adicionado`
-        lista.appendChild(valorslct)
-        resposta.innerHTML=''
+    if(isNum(numeral.value) && !inList(numeral.value, vetorValores)){
+        vetorValores.push(Number(numeral.value))
+        let optitens = document.createElement('option')
+        optitens.text=`Valor ${numeral.value} adicionado.`
+        listaNum.appendChild(optitens)
+        info.innerHTML=''
+        numeral.value=''
+        numeral.focus()
     }
-    
     else{
-        alert('Erro: valor inválido ou já adicionado na lista.')
+        alert('Erro: valor inválido ou já adicionado.')
     }
-
-        numero.value =''
-        numero.focus()
-}
+}   
 
 function finalizar(){
-
-    let total = vetorLista.length
-    let maior = Number(vetorLista[0])
-    let menor = Number(vetorLista[0])
-    let soma = 0
-    let media = 0
-
-    if(vetorLista.length == 0){
-        alert('Erro: adicione valor para finalizar!')
+    if(vetorValores.length ==0){
+        alert('Erro: adicione valores para finalizar!')
     }
     else{
-        for (let pos in vetorLista){
+        let total = vetorValores.length
+        let maior = vetorValores[0]
+        let menor = vetorValores[0]
+        let soma = 0
+        let mult = vetorValores[0]
+        let media = 0
+        
 
-            soma += vetorLista[pos]
-            media = soma/total
-            
-            if(Number(vetorLista[pos]) > maior){
-                maior = vetorLista[pos]
-            }
+        for(let pos in vetorValores){
 
-            if (Number(vetorLista[pos]) < menor){
-                menor = vetorLista[pos]
-            }
-            resposta.innerHTML=``
-            resposta.innerHTML+=`<p>Ao todo, temos ${total} valores adicionados.</p>`
-            resposta.innerHTML+=`<p>O maior valor adicionado é ${maior}. </p>`
-            resposta.innerHTML+=`<p>O menor valor adicionado é ${menor}.</p>`
-            resposta.innerHTML+=`<p>Somando todos os valore, temos: ${soma}.</p>`
-            resposta.innerHTML+=`<p>A média dos valores adicionados é ${media}. </p>`
-            numero.focus()
-
+            if(vetorValores[pos] > maior){
+            maior = vetorValores[pos]
         }
+        if (vetorValores[pos] < menor){
+            menor = vetorValores[pos]
+        }
+
+            soma = soma + vetorValores[pos]
+            mult = mult * vetorValores[pos]
+            media = soma/total
+            info.innerHTML=''
+            info.innerHTML+=`<p>No total, temos ${total} valores adicionados.</P>`
+            info.innerHTML+=`<p>O maior valor adicionado é ${maior}.</P>`
+            info.innerHTML+=`<p>O menor valor adicionado é ${menor}.</P>`
+            info.innerHTML+=`<p>Somando todos os valores, temos ${soma}.</P>`
+            info.innerHTML+=`<p>Multiplicando todos os valores temos ${mult}.</P>`
+            info.innerHTML+=`<p>A média dos valores adicionados é ${media}</P>`
+        }
+
     }
+
 }
 
 function atualizar(){

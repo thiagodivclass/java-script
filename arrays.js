@@ -73,3 +73,13 @@
 //     }
 // }
 // console.log(fatorial(6))
+
+
+
+let amigo = {nome:'Thiago', sexo:'M', peso:84, engordar(p=0){
+    console.log('Thiago eongordou')
+    this.peso += p
+} 
+}
+amigo.engordar(2)
+console.log(`${amigo.nome} de sexo ${amigo.sexo} pesa ${amigo.peso}kg`)

@@ -37,7 +37,7 @@ function clique() {
 
                 let item = document.createElement('option')
                 item.text = `${a} x ${b} = ${a * b}`
-                item.value = `mostrar${b}`
+                item.value = `${b}`
                 mostrar.appendChild(item)
                 telamob.innerHTML += `${a} x ${b} = ${a * b} <br>`
                 b++

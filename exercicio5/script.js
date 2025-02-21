@@ -1,59 +1,45 @@
-var campo = document.querySelector('#num')
-var verific = document.querySelector('#confirma')
-var clean = document.querySelector('#limp')
-var mostrar = document.querySelector('#tabuada')
-var telamob = document.querySelector('#texto')
+let campo = { número: document.querySelector('input#num'), lista: document.querySelector('select#tabuada'), celular: document.querySelector('div#texto') }
+let botao = { gerar: document.querySelector('input#confirma'), limpar: document.querySelector('input#limp') }
 
-clean.addEventListener('click', apaga)
-verific.addEventListener('click', clique)
+botao.gerar.addEventListener('click', gerar)
+botao.limpar.addEventListener('click', limpar)
 
-
-
-
-
-function clique() {
-
-
-
-    if (campo.value.length <= 0) {
-        alert('Erro: Campo vazio, digite um número e gere a tabuada!')
-
+function gerar() {
+     
+    if (campo.número.value.length == 0) {
+        alert('Campo vazio, adicione um número!')
     }
-    
+
+   
     else {
-        var num = Number(campo.value)
-        if (num < 0) {
 
-            alert('Impossível calcular menor que 0')
-        }
-
-        else {
-            let a = num
-            let b = 1
-            telamob.innerHTML = ''
-            mostrar.innerHTML = ''
+        if (campo.número.value >= 0) {
+            let a = 1
+            let b = Number(campo.número.value)
+            campo.celular.innerHTML=''
+            campo.lista.innerHTML=''
             
-            while (b <= 10) {
+            while (a <= 30) {
+                let lista = document.createElement('option')
+                lista.text += `${b} x ${a} = ${b * a}`
+                campo.lista.appendChild(lista)
+                campo.celular.innerHTML += `${b} x ${a} = ${b * a} <br>`
+                a++
 
-                let item = document.createElement('option')
-                item.text = `${a} x ${b} = ${a * b}`
-                item.value = `${b}`
-                mostrar.appendChild(item)
-                telamob.innerHTML += `${a} x ${b} = ${a * b} <br>`
-                b++
-                
-                
-            }         
+            }
+            
+           
+            
 
         }
-       
+        else {
+            alert('Impossível calcular menor que 0.')
+        }
+
+
     }
-
 }
-
-
-
-function apaga() {
-    mostrar.innerHTML = ''
-    telamob.innerHTML = ''
+function limpar(){
+    campo.celular.innerHTML=''
+    campo.lista.innerHTML=''
 }

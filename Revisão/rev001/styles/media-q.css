@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@media screen and (min-width:600px){
+    main h2{
+        text-align: center;
+    }
+    
+    main div.container-geral{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        height: 500px;
+    }
+
+
+
+
+    main #container-tabuada{
+     display: flex;
+     flex-flow: column nowrap;
+     align-items: center;
+     justify-content: center;
+     height: 400px;
+     width: 300px;
+    }
+    main #num1{
+        height: 40px;
+        width: 200px;
+        margin: 5px;
+    }
+    #container-tabuada #list-tab{
+        display: flex;
+        width: 120px;
+        height: 200px;
+        padding: 10px;
+        margin-top: 5px;
+        scrollbar-width: none;
+        text-align: center;
+        background-color: bisque;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 1px 1px 1px 0.4px rgba(0, 0, 0, 0.336);}
+
+        section #mobtab{
+            display: none;
+        }
+        section #gerar, main #contar{
+            cursor: pointer;
+            height: 40px;
+            width: 200px;
+        }
+        section #gerar:hover, main #contar:hover{
+        background-color: rgb(255, 240, 222);
+        } 
+
+        div#contagem-container{
+            display: flex;
+             flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            width: 300px;
+            margin: 0;
+        }
+
+        div #campo1, div #campo2, div #campo3{
+            height: 40px;
+            width: 200px;
+         }
+
+         div#context{
+            padding: 10px;
+         }
+
+       
+}

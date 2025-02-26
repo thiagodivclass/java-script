@@ -18,16 +18,86 @@ header {
     text-align: center;
     background-color: rgba(125, 245, 189, 0.699);
     font-size: 0.8em;
+    height: 45px;
+    padding: 5px;
 }
 main h2 {
     font-size: 1.3em;
+    text-align: left;
+    margin: 10px 20px;
 }
 
+
+main #num1{
+    width: 120px;
+    height: 20px;
+    margin-left: 20px;
+    text-align: center;
+    background-color: bisque;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    
+}
+ div #campo1, div #campo2, div #campo3{
+    width: 110px;
+    height: 20px;
+    text-align: center;
+    background-color: rgb(255, 240, 222);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    
+}
+
+/* Botões */
+section #gerar, main #contar{
+    width: 110px;
+    height: 20px;
+    text-align: center;
+    background-color: rgba(255, 8, 8, 0.521);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    
+}
+
+
+
+
+
 #container-tabuada #list-tab{
-    width: 150px;
+    display: none;
+    width: 120px;
     margin-top: 5px;
     scrollbar-width: none;
     text-align: center;
+    background-color: bisque;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 0.4px rgba(0, 0, 0, 0.336);
+}
+
+section #mobtab{
+    width: 120px;
+    height: 180px;
+    margin:5px 20px;
+    scrollbar-width: none;
+    text-align: center;
+    background-color: bisque;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 0.4px rgba(0, 0, 0, 0.336);
+    overflow:auto;
+
+}
+
+main #contagem-container{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 250px;
+    margin: 5px 20px;
+    
 }
 
 #contagem-container input{
@@ -35,9 +105,17 @@ main h2 {
 }
 
 main #context{
-    background-color: #fff;
-    width: 200px;
-    height: 300px;
-    overflow: auto;
+    width: 120px;
+    height: 150px;
+    margin-top:5px;
     scrollbar-width: none;
+    text-align: center;
+    background-color: bisque;
+    border: none;
+    padding: 5px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 0.4px rgba(0, 0, 0, 0.336);
+    overflow:auto;
+
 }
+ 

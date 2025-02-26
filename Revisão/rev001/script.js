@@ -20,51 +20,58 @@ function tabuada() {
         if (num.value >= 0) {
             let result = campo.select
             let b = 0
-            campo.celular.innerHTML=''
-            campo.select.innerHTML=''
+            campo.celular.innerHTML = ''
+            campo.select.innerHTML = ''
             for (let a = num.value; b <= 10; a * b) {
                 let fator = document.createElement('option')
                 fator.text += `${a} x ${b} = ${a * b}`
                 result.appendChild(fator)
                 campo.celular.innerHTML += `${a} x ${b} = ${a * b}<br>`
                 b++
-
             }
-       }
+            campo.numero.value = ''
+            campo.numero.focus()
+        }
     }
 }
 
-function contar(){
-    if(campo.contde.value.length ==0|| campo.contate.value.length ==0 || campo.contint.value.length ==0 ){
+function contar() {
+    if (campo.contde.value.length == 0 || campo.contate.value.length == 0 || campo.contint.value.length == 0) {
         alert('Erro: um ou mais campos vazios!')
     }
-    else{
+    else {
         let de = Number(campo.contde.value)
         let até = Number(campo.contate.value)
         let interv = Number(campo.contint.value)
-        if(interv < 1){
+        campo.resultcont.innerHTML = ''
+        if (interv < 1) {
             alert('Intervalo menor que 1, considerando intervalo 1.')
             interv = 1
-                    
+
         }
 
-        if( de < até){
-            for( let a = de; a <= até; a+=interv){
-               campo.resultcont.innerHTML+=` ${a},`
+        if (de < até) {
+            for (let a = de; a <= até; a += interv) {
+                campo.resultcont.innerHTML += ` ${a},`
             }
-              
-            campo.resultcont.innerHTML+='\u{1F3C1}'
+
+            campo.resultcont.innerHTML += '\u{1F3C1}'
 
         }
-        if( de > até){
-            for( let a = de; a >= até; a-=interv){
-               campo.resultcont.innerHTML+=` ${a},`
+        if (de > até) {
+            for (let a = de; a >= até; a -= interv) {
+                campo.resultcont.innerHTML += ` ${a},`
             }
-              
-            campo.resultcont.innerHTML+='\u{1F3C1}'
+
+            campo.resultcont.innerHTML += '\u{1F3C1}'
+
 
         }
+        campo.contde.value = ''
+        campo.contate.value = ''
+        campo.contint.value = ''
+        campo.contde.focus()
 
-    } 
-    
+    }
+
 }

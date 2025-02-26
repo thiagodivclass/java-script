@@ -1,0 +1,43 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    height: 100vh;
+}
+
+body{
+    background-color: burlywood;
+}
+
+
+header {
+    text-align: center;
+    background-color: rgba(125, 245, 189, 0.699);
+    font-size: 0.8em;
+}
+main h2 {
+    font-size: 1.3em;
+}
+
+#container-tabuada #list-tab{
+    width: 150px;
+    margin-top: 5px;
+    scrollbar-width: none;
+    text-align: center;
+}
+
+#contagem-container input{
+    margin-bottom: 5px;
+}
+
+main #context{
+    background-color: #fff;
+    width: 200px;
+    height: 300px;
+    overflow: auto;
+    scrollbar-width: none;
+}

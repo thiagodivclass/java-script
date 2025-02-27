@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/media-q.css" media="screen">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
+
     <title>Revisão HTML, CSS e JS</title>
 </head>
 <body>
@@ -16,7 +19,7 @@
         <div class="container-geral">
             
             <section id="container-tabuada">
-                <h2>Tabuada:</h2>
+                <h2><i class="fas fa-undo-alt" id="volttab"></i> Tabuada:</h2>
                 <input type="number" name="num1" id="num1" min="0" placeholder="Número">
                 <button id="gerar" name="gerar"> Gerar tabuada </button>
                 <p><select name="list-tab" id="list-tab" size="10"></select></p>
@@ -24,7 +27,7 @@
             </section>
            
             <div id="contagem-container">
-                <h2>Contagem:</h2>
+                <h2><i class="fas fa-undo-alt" id="voltcont"></i> Contagem:</h2>
                 <input type="number" name="campo1" id="campo1" placeholder="De.." min="0">
                 <input type="number" name="campo2" id="campo2" placeholder="Até..." min="0">
                 <input type="number" name="campo3" id="campo3" placeholder="Intervalo..." min="0">

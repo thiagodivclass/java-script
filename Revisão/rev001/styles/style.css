@@ -27,6 +27,11 @@ main h2 {
     margin: 10px 20px;
 }
 
+i#voltcont, i#volttab{
+    font-size: 1.2em;
+    color: rgb(28, 180, 180);
+    
+}
 
 main #num1{
     width: 120px;

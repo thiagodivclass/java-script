@@ -1,8 +1,10 @@
-let botao = { gerar: document.querySelector('#gerar'), contar: document.querySelector('#contar') }
+let botao = { gerar: document.querySelector('#gerar'), contar: document.querySelector('#contar'), voltartab: document.querySelector('i#volttab'), voltarcont: document.querySelector('i#voltcont') }
 let campo = { numero: document.querySelector('input#num1'), select: document.querySelector('select#list-tab'), contde: document.querySelector('input#campo1'), contate: document.querySelector('input#campo2'), contint: document.querySelector('input#campo3'), celular: document.querySelector('div#mobtab'), resultcont: document.querySelector('div#context') }
 
 botao.gerar.addEventListener('click', tabuada)
 botao.contar.addEventListener('click', contar)
+botao.voltartab.addEventListener('click', voltab)
+botao.voltarcont.addEventListener('click', voltcont)
 
 function tabuada() {
     let num = campo.numero
@@ -74,4 +76,13 @@ function contar() {
 
     }
 
+}
+
+function voltab(){
+    campo.celular.innerHTML=''
+    campo.select.innerHTML = ''
+}
+
+function voltcont(){
+    campo.resultcont.innerHTML =''
 }

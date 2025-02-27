@@ -3,6 +3,19 @@
     main h2{
         text-align: center;
     }
+
+
+    i#voltcont, i#volttab{
+        font-size: 1.2em;
+        color: rgb(28, 180, 180);
+        cursor: pointer;
+    }
+
+    i#voltcont:hover, i#volttab:hover{
+        color: aqua;
+        transform: translateY(-3px);
+        transition: 0.5s;
+    }
     
     main div.container-geral{
         display: flex;

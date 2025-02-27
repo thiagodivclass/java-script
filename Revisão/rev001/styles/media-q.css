@@ -9,6 +9,8 @@
         font-size: 1.2em;
         color: rgb(28, 180, 180);
         cursor: pointer;
+        border: none;
+        background-color: transparent;
     }
 
     i#voltcont:hover, i#volttab:hover{
